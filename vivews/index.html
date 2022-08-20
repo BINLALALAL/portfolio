@@ -5,24 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../images/로고.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../public/reset.css">
     <link rel="stylesheet" href="../public/Web.css">
-    <title>Website</title>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
+    <title>Website</title>
+</head>
+<body>
+    <div class="cotainer">
+        <!-- <div class="TopBox">top</div> -->
+        <div class="header">
+            <!--윗부분 (맨 왼쪽엔 - 3개인걸로 사이드 바 만들기 )-->
+            <h1>header</h1> 
+        </div>
+        <div class="side"> 
+        side <!--슬라이더 -->
+        </div>
+        <div class="main">
+            main <!--items-->
+            <div class="mainSlider">
+                <div><img src="../images/slide01.jpg" alt=""></div>
+                <div><img src="../images/slide02.jpg" alt=""></div>
+                <div><img src="../images/slide03.jpg" alt=""></div>
+              </div>
+        
+              <script>
+                $(function(){
+                    $('.mainSlider').slick(
+                        
+                    );
+                });
+            </script>
+        </div>
+        <div class="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
+    <!-- 슬라이더
+    <div class="mainSlider">
+        <div><img src="../images/slide01.jpg" alt=""></div>
+        <div><img src="../images/slide02.jpg" alt=""></div>
+        <div><img src="../images/slide03.jpg" alt=""></div>
+      </div>
+
+      <script>
         $(function(){
             $('.mainSlide').slick(
                 
             );
         });
-    </script>
-</head>
-<body>
-    <div class="mainSlide">
-        <div><img src="../images/slide01.jpg" alt=""></div>
-        <div><img src="../images/slide02.jpg" alt=""></div>
-        <div><img src="../images/slide03.jpg" alt=""></div>
-      </div>
-</body>
-</html>
+    </script> -->
